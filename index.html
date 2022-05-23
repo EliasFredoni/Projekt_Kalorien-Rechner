@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt_Kalorien-Rechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Kalorienrechner</h1>
+        <form action="">
+            <label for="">Körpergröße</label>
+            <input type="number" name="" id="cm">
+            <label for="">Alter</label>
+            <input type="number" name="" id="age">
+            <label for="">Gewicht</label>
+            <input type="number" name="" id="kg">
+        </form>
+        <div>
+            <label for="">Mann</label>
+            <input type="radio" name="button" id="men">
+            <label for="">Frau</label>
+            <input type="radio" name="button" id="woman">
+        </div>
+        <label for="">Arbeits- und Freizeitaktivität</label>
+        <div>
+            <label for="">Wieviel Stunden am Tag?</label>
+            <input id="hours" type="number" name="" id="">
+        </div>
+        <label for="">Welche Aktivität?</label>
+        <select name="" id="" onchange="pal()">
+            <option id="1" value="">Schlafen</option>
+            <option id="2" value="">Nur sitzen oder liegen</option>
+            <option id="3" value="">Überwiegend sitzen</option>
+            <option id="4" value="">Sowohl sitzen als auch stehen und gehen</option>
+            <option id="5" value="">Hauptsächlich stehended</option>
+            <option id="6" value="">Körperlich aktiv</option>
+        </select>
+        <input type="button" value="Submit" onclick="submit()">
+        <div>
+            <p id="output"></p>
+        </div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
